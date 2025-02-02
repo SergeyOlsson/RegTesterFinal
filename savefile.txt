@@ -1,0 +1,5 @@
+firstName: Emily
+lastName: Williams
+email: vwtng@example.com
+password: Pass1234
+date: 01/01/2000
