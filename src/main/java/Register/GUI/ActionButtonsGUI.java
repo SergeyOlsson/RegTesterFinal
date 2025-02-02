@@ -1,19 +1,17 @@
 package Register.GUI;
-import Register.ActionButtons.*;
+import Register.Objects.*;
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import static Register.ActionButtons.ActionValues.*;
-import static Register.ActionButtons.BrowserManager.activeDriver;
+import static Register.Objects.ObjectValues.*;
+import static Register.Objects.BrowserManager.activeDriver;
 import static Register.GUI.BrowserSelectionGUI.currentURL;
 import static Register.GUI.OutputGUI.output;
 

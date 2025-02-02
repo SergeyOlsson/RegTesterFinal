@@ -1,4 +1,4 @@
-package Register.ActionButtons;
+package Register.Objects;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,11 +10,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 import java.util.Random;
 
-import static Register.ActionButtons.BrowserManager.activeDriver;
+import static Register.Objects.BrowserManager.activeDriver;
 import static Register.GUI.BrowserSelectionGUI.currentURL;
 import static Register.GUI.OutputGUI.output;
 
-public class ActionValues {
+public class ObjectValues {
     private static final Random random = new Random();
     private static final Date date = new Date();
     private static final FirstName firstName = new FirstName();

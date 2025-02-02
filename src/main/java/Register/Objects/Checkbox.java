@@ -1,4 +1,4 @@
-package Register.ActionButtons;
+package Register.Objects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,9 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static Register.ActionButtons.CheckboxIdentifier.checkboxValue;
 import static Register.GUI.OutputGUI.output;
-import static Register.ActionButtons.CheckboxIdentifier.checkboxExists;
+import static Register.Objects.CheckboxIdentifier.checkboxExists;
 
 public class Checkbox {
     public static void checkboxClick(WebDriver driver) {

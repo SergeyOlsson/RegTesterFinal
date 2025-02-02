@@ -1,4 +1,4 @@
-package Register.ActionButtons;
+package Register.Objects;
 
 import org.openqa.selenium.WebDriver;
 
