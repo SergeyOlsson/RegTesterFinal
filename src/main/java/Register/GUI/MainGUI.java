@@ -10,7 +10,7 @@ public class MainGUI {
         //Create frame
         JFrame frame = new JFrame("Reg_Tester");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(750, 300);
+        frame.setSize(650, 350);
         frame.setLayout(new BorderLayout());
 
         //Create BrowserSelectionGUI instance and add it to the NORTH section of the frame
