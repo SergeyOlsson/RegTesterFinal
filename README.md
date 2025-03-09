@@ -6,3 +6,4 @@ When you get to the website you may test to click a "missing button", "bad butto
 Clicking on missing button will autofill each field correctly but the specific missing field, it will leave it blank. 
 Clicking on bad button will autofill each field correctly but the specific bad field, this field will have an incorrect value.
 Clicking on success button will autofill each field correctly and save values from registration, if succeeded. 
+I am currently working on RegTester 2.0 which is more sophisticated and is not bound to a specific webpage.
