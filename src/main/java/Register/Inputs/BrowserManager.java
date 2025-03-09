@@ -1,10 +1,11 @@
-package Register.Objects;
+package Register.Inputs;
 
 import org.openqa.selenium.WebDriver;
 
 import javax.swing.*;
 
 import static Register.GUI.OutputGUI.output;
+import static Register.GUI.BrowserSelectionGUI.currentURL;
 
 public class BrowserManager {
     public static WebDriver activeDriver;

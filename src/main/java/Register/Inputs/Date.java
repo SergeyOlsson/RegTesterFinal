@@ -1,15 +1,16 @@
-package Register.Objects;
+package Register.Inputs;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
 import static Register.GUI.OutputGUI.output;
 /* Code explained in FirstName */
-public class Email {
-    public static String emailValue1;
-    public void emailToField(WebDriver driver, String email) {
+public class Date {
+    public static String dateValue;
+    public void dateToField(WebDriver driver, String date) {
         boolean firstMethodSuccessful = false;
     try {
         List<WebElement> inputFields = driver.findElements(By.tagName("input"));
@@ -17,17 +18,18 @@ public class Email {
 
             String name = inputField.getDomAttribute("name");
             String id = inputField.getDomAttribute("id");
-            String keyword = "mail";
+            String keyword = "date";
             if ((name != null && name.toLowerCase().contains(keyword)) ||
                     (id != null && id.toLowerCase().contains(keyword))) {
 
                 if (inputField.isDisplayed() && inputField.isEnabled()) {
                     inputField.clear();
-                    inputField.sendKeys(email);
+                    inputField.sendKeys(date);
                     inputField.click();
-                    emailValue1 = inputField.getAttribute("value");
-                    if (!emailValue1.isEmpty()) {
-                        output.append("Successfully sent " + emailValue1 + " to field! " + "(Name: " + name + ") (ID: " + id + ") \n");
+                    dateValue = inputField.getAttribute("value");
+                    assert dateValue != null;
+                    if (!dateValue.isEmpty()) {
+                        output.append("Successfully sent " + dateValue + " to field! " + "(Name: " + name + ") (ID: " + id + ") \n");
                     }
                     firstMethodSuccessful = true;
                     break;
@@ -35,22 +37,24 @@ public class Email {
             }
         }
     } catch (Exception e) {
-        output.append("Error: Could not find the email field! Trying second method... \n");
+        output.append("Error: Could not find the date field! Trying second method... \n");
     }
     try {
         if (!firstMethodSuccessful) {
-            List<WebElement> alternativeInput = driver.findElements(By.xpath("//label[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'mail')]//following::input"));
+            List<WebElement> alternativeInput = driver.findElements(By.xpath("//label[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'date')]//following::input"));
             alternativeInput.get(0).clear();
-            alternativeInput.get(0).sendKeys(email);
+            alternativeInput.get(0).sendKeys(date);
             String name = alternativeInput.get(0).getDomAttribute("name");
             String id = alternativeInput.get(0).getDomAttribute("id");
-            emailValue1 = alternativeInput.get(0).getAttribute("value");
-            if (!emailValue1.isEmpty()) {
-                output.append("Successfully sent " + emailValue1 + " to field! " + "(Name: " + name + ") (ID: " + id + ") \n");
+            dateValue = alternativeInput.get(0).getAttribute("value");
+            assert dateValue != null;
+            if (!dateValue.isEmpty()) {
+                output.append("Successfully sent " + dateValue + " to field! " + "(Name: " + name + ") (ID: " + id + ") \n");
             }
         }
     } catch (Exception e) {
-        output.append("Error: Could not find the email field! \n");
+        output.append("Error: Could not find the date field! \n");
     }
     }
 }
+

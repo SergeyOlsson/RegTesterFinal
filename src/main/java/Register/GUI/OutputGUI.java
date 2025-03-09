@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowEvent;
 
-import static Register.Objects.BrowserManager.activeDriver;
+import static Register.Inputs.BrowserManager.activeDriver;
 
 public class OutputGUI extends JPanel {
     public static JTextArea output;
@@ -30,6 +30,7 @@ public class OutputGUI extends JPanel {
         buttonLeftPanel.add(resetLogsButton);
         buttonRightPanel.add(exitButton);
         //Add the buttons to the SOUTH section
+        //Add seperator to the SOUTH section
         add(buttonContainer, BorderLayout.SOUTH);
         //Remove focus
         exitButton.setFocusable(false);
@@ -66,5 +67,9 @@ public class OutputGUI extends JPanel {
         }
         System.exit(0);
     });
+    //Add a label
+    JLabel label = new JLabel("Made by Sergey Olsson");
+    label.setHorizontalAlignment(SwingConstants.CENTER);
+    add(label, BorderLayout.CENTER);
     }
 }

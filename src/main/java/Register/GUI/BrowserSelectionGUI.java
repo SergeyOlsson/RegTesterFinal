@@ -1,6 +1,6 @@
 package Register.GUI;
 
-import Register.Objects.BrowserManager;
+import Register.Inputs.BrowserManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,8 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import javax.swing.*;
 import java.awt.*;
 
-import static Register.Objects.ObjectValues.sessionInProgress;
-import static Register.Objects.ObjectValues.unchecked;
+import static Register.Inputs.InputValues.sessionInProgress;
+import static Register.Inputs.InputValues.unchecked;
 import static Register.GUI.OutputGUI.output;
 
 //Extends JPanel is used to create a container for the browser selection buttons

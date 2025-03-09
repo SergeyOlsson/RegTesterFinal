@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 
-import Register.Objects.BrowserManager;
+import Register.Inputs.BrowserManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

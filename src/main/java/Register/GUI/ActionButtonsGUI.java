@@ -1,5 +1,5 @@
 package Register.GUI;
-import Register.Objects.*;
+import Register.Inputs.*;
 import org.openqa.selenium.TimeoutException;
 
 import javax.swing.*;
@@ -10,8 +10,8 @@ import java.io.PrintWriter;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import static Register.Objects.ObjectValues.*;
-import static Register.Objects.BrowserManager.activeDriver;
+import static Register.Inputs.InputValues.*;
+import static Register.Inputs.BrowserManager.activeDriver;
 import static Register.GUI.BrowserSelectionGUI.currentURL;
 import static Register.GUI.OutputGUI.output;
 

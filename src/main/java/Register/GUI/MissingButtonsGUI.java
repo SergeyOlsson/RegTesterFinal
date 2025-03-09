@@ -1,8 +1,8 @@
 package Register.GUI;
 
-import Register.Objects.*;
-import Register.Objects.Checkbox;
-import Register.Objects.BrowserManager;
+import Register.Inputs.*;
+import Register.Inputs.Checkbox;
+import Register.Inputs.BrowserManager;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.TimeoutException;
 
@@ -11,10 +11,10 @@ import java.awt.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import static Register.Objects.ObjectValues.*;
-import static Register.Objects.CheckboxIdentifier.checkboxExists;
-import static Register.Objects.CheckboxIdentifier.checkboxValue;
-import static Register.Objects.BrowserManager.activeDriver;
+import static Register.Inputs.InputValues.*;
+import static Register.Inputs.CheckboxIdentifier.checkboxExists;
+import static Register.Inputs.CheckboxIdentifier.checkboxValue;
+import static Register.Inputs.BrowserManager.activeDriver;
 import static Register.GUI.BrowserSelectionGUI.currentURL;
 import static Register.GUI.OutputGUI.output;
 

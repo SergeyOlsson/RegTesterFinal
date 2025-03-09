@@ -10,7 +10,7 @@ public class MainGUI {
         //Create frame
         JFrame frame = new JFrame("Reg_Tester");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 300);
+        frame.setSize(750, 300);
         frame.setLayout(new BorderLayout());
 
         //Create BrowserSelectionGUI instance and add it to the NORTH section of the frame
@@ -42,10 +42,3 @@ public class MainGUI {
         frame.setAlwaysOnTop(true);
     }
 }
-/*
-   JPanel centerContainer = new JPanel(new BorderLayout());
-        centerContainer.setLayout(new BoxLayout(centerContainer, BoxLayout.Y_AXIS));
-        centerContainer.add(ButtonsGUI1, BorderLayout.CENTER);
-        centerContainer.add(ButtonsGUI2, BorderLayout.CENTER);
-        frame.add(centerContainer, BorderLayout.CENTER);
- */
